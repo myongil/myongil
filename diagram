@@ -1,0 +1,25 @@
+sequenceDiagram
+
+participant m as main
+participant s as Shell
+participant l as Loader
+participant r as Recommender
+participant h as History
+
+m ->>+ l: load()
+l -->>- m: df
+m ->>+ r: init(df)
+r -->>- m: recomm
+m ->>+ h: init()
+h -->>- m: history
+m ->>+ s: init(recomm, history)
+s -->>- m: shell
+m ->>+s : run()
+loop
+    s ->> s: input()
+    s ->>+ r: by_prefs()
+    r -->>- s: foods
+    s ->> h: update(foods)
+    s ->> s: print()
+end
+s -->>- m: done
