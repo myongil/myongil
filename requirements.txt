@@ -9,3 +9,4 @@ matplotlib
 koreanize_matplotlib
 scikit-learn
 pandas_profiling
+streamlit_pandas_profiling
