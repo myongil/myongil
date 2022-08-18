@@ -19,7 +19,7 @@ def get_dataset():
 model = cached_model()
 df = get_dataset()
 
-st.header('상담챗봇')
+st.header('말봇')
 st.markdown("[주미의 홈페이지](https://sjumiwep.shop/)")
 
 if 'generated' not in st.session_state:
