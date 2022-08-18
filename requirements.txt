@@ -12,3 +12,4 @@ pandas_profiling
 streamlit_pandas_profiling
 yfinance
 streamlit_chat
+sentence_transformers
