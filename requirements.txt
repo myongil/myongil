@@ -11,4 +11,4 @@ scikit-learn
 pandas_profiling
 streamlit_pandas_profiling
 yfinance
-message
+streamlit_chat
