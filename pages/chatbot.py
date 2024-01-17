@@ -20,7 +20,7 @@ model = cached_model()
 df = get_dataset()
 
 st.header('말봇')
-st.markdown("[주미의 홈페이지](https://sjumiwep.shop/)")
+st.markdown("[의 홈페이지](https://sjumiwep.shop/)")
 
 if 'generated' not in st.session_state:
     st.session_state['generated'] = []
